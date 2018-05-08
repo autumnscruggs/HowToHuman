@@ -1,0 +1,2 @@
+You just add the InteractableObject script onto an object, and add in the function that you want to be called when the Interaction button 
+(defined in the InputManager class - so the GameManager prefab is required) is pressed within the trigger, and it will call it for you. :)

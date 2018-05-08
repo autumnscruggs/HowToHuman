@@ -1,0 +1,38 @@
+﻿using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+
+public static class GraphicExtensions
+{
+    /// <summary>
+    /// Fade methods forUI elements;
+    /// </summary>
+    /// <param name="g"></param>
+    public static void FadeIn(this Graphic g, float duration)
+    {
+        g.GetComponent<CanvasRenderer>().SetAlpha(0f);
+        g.CrossFadeAlpha(1f, duration, false);//second param is the time
+    }
+    public static void FadeOut(this Graphic g, float duration)
+    {
+        g.GetComponent<CanvasRenderer>().SetAlpha(1f);
+        g.CrossFadeAlpha(0f, duration, false);
+    }
+}
+
+public static class ScrollRectExtensions
+{
+    public static void ScrollToTop(this ScrollRect scrollRect)
+    {
+        Canvas.ForceUpdateCanvases();
+        scrollRect.verticalNormalizedPosition = 1f;
+        Canvas.ForceUpdateCanvases();
+    }
+    public static void ScrollToBottom(this ScrollRect scrollRect)
+    {
+        Canvas.ForceUpdateCanvases();
+        scrollRect.verticalNormalizedPosition = 0f;
+        Canvas.ForceUpdateCanvases();
+    }
+}
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-16"?>
+<KeyboardInputStrings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LeftInputs>
+    <KeyCode>LeftArrow</KeyCode>
+    <KeyCode>A</KeyCode>
+  </LeftInputs>
+  <RightInputs>
+    <KeyCode>RightArrow</KeyCode>
+    <KeyCode>D</KeyCode>
+  </RightInputs>
+  <UpInputs>
+    <KeyCode>UpArrow</KeyCode>
+    <KeyCode>W</KeyCode>
+  </UpInputs>
+  <DownInputs>
+    <KeyCode>DownArrow</KeyCode>
+    <KeyCode>S</KeyCode>
+  </DownInputs>
+  <SprintInputs>
+    <KeyCode>LeftShift</KeyCode>
+    <KeyCode>RightShift</KeyCode>
+  </SprintInputs>
+  <CrouchInputs>
+    <KeyCode>LeftControl</KeyCode>
+    <KeyCode>RightControl</KeyCode>
+  </CrouchInputs>
+  <InteractionInputs>
+    <KeyCode>E</KeyCode>
+    <KeyCode>Return</KeyCode>
+  </InteractionInputs>
+  <PauseInputs>
+    <KeyCode>Escape</KeyCode>
+  </PauseInputs>
+</KeyboardInputStrings>
